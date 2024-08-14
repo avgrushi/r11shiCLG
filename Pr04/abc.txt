@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>String methods</title>
+</head>
+
+<body onload="hello()">
+	
+<script>
+	//String methods
+	let str = new String("Hello world");
+	document.write("Original String = " + str);
+	document.write("charAt() Method = " + str.charAt(5));
+	document.write("charCodeAt() Method = " + str.charCodeAt(e));
+	document.write("indexOf() Method = " +char )
+	
+</script>
+</body>
+</html>
