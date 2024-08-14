@@ -1,0 +1,73 @@
+<html>
+<style>
+form{
+border : 1px solid black;
+padding : 10px;
+}
+</style>
+<body>
+	<form style = >
+        <label for="firstName">First Name : </label>
+        <input type="text" name="firstName" id="firstName">
+
+	<br>
+        
+        <label for="MiddleName">Middle Name : </label>
+        <input type="text" name="MiddleName" id="MiddleName">
+	
+	<br>
+
+        <label for="LastName">Last Name : </label>
+        <input type="text" name="LastName" id="LastName">
+	
+	<br>
+
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail">
+
+	<br>
+
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass">
+
+	<br>
+
+        <label for="mobileNo">Mobile No : </label>
+        <input type="number" name="mobileNo" id="mobileNo">
+	<br>
+
+        <label for="address">Address : </label>
+        <textarea name="address" id="address" rows="10" cols="30"></textarea>
+	<br>
+
+        <div class="radio-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+	<br>
+        <label for="class">Class</label>
+        <select name="class" id="class">
+            <option value="TYCO">TYCO</option>
+            <option value="SYCO">SYCO</option>
+            <option value="FYCO">FYCO</option>
+        </select>
+	<br>
+        <input type="submit" onclick="Fsubmit()" value="Submit">
+        <input type="reset" onclick="resetform()" value="Reset">
+    </form>
+
+<script>
+
+	function resetform(){
+		alert("The form is reset");
+	}
+
+	function Fsubmit(){
+		alert("Registration Form submitted");
+	}
+</script>
+<body>
+</html>

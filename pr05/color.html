@@ -1,0 +1,20 @@
+<html>
+
+<body>
+	<p>Select a color</p>
+	<select id="color" onclick="bgChange()">
+		<option value="red">red</option>
+		<option  value="blue">blue</option>
+		<option value="violet">
+	</select>
+<script>
+	function bgChange(){
+		var c = document.getElementById("color").value;
+		if(c=="blue"){
+			document.style.background-color = "FF0000";
+		}
+	}
+	
+</script>
+<body>
+</html>

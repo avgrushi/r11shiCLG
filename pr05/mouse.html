@@ -1,0 +1,38 @@
+<html>
+
+<body>
+	<p onmouseover="over()"><b>Hover o<b></p>
+	<p> When mouse is hovered over the above text alert is displayed</p>
+
+	<p onmouseout="out()"><b>Text<b></p>
+	<p> When mouse is hovered out over the above text alert is displayed</p>
+
+	<p onclick="clicked()"><b>Text<b></p>
+	<p> When mouse is clicked the above text alert is displayed</p>
+
+	<input type="text" onkeydown="keydown1()">
+	<input type="text" onkeyup="keyup1()">
+<script>
+
+	function over(){
+		alert("Mouse Over");
+	}
+	
+	function out(){
+		alert("Mouse Out");
+	}
+
+	function clicked(){
+		alert("Clicked");
+	}
+
+	function keydown1(){
+		alert("Key down");
+	}
+
+	function keyup1(){
+		alert("key up");
+	}
+</script>
+<body>
+</html>
