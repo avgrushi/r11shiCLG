@@ -1,0 +1,46 @@
+<html>
+<body>
+<script>
+	function check(){
+		var x = "You selected : ";
+	 
+		with(document.forms.myform){
+			if(c.checked === true){
+				x += c.value + " ";
+			}
+			
+			if(cpp.checked === true){
+				x += cpp.value + " ";
+			}
+			
+			if(java.checked === true){
+				x += java.value + " ";
+			}
+			
+			if(py.checked === true){
+				x += py.value + " ";
+			}
+		
+			if(r.checked === true){
+				x += r.value + " ";
+			}
+		}
+
+		document.write(x);
+	}
+</script>
+<h2>Login Form</h2>
+<form id="myform">
+	C: <input type="checkbox" name="c" value="c">
+	C++ : <input type="checkbox" name="cpp" value="c++">
+	Java : <input type="checkbox" name="java" value="java">
+	Python : <input type="checkbox" name="py" value="python">
+	Rust : <input type="checkbox" name="r" value="rust">
+	
+	
+	<button type="submit" onclick="check()">Check </button>
+	<button type="reset" onclick="resetForm()">Reset</button>
+</form>
+
+</body>
+</html>

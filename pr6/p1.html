@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Login form</title>
+
+<style>
+	form{
+		border : 1px solid black;
+		width : 200px;
+		padding : 10px;
+	}
+	input{
+	display : flex;
+	flex-direction : column; 
+	}
+</style>
+
+</head>
+
+<body>
+<script>
+	function validate(){
+		
+		event.preventDefault();
+		let id = document.forms.myform.uid.value;	
+		let pass = document.forms.myform.pass.value;
+
+		if(id===''){
+			alert("Please Fill ID");
+		}
+                else if(id.length < 5){
+			alert("Invalid ID");
+			return false;
+		}
+		
+
+		if(pass===''){
+			alert("Please Fill Password");
+			return false;
+		}
+		else if(pass.length < 6){
+			alert("Invalid Password");
+			return false;
+		}
+		
+		
+		if(id !== '' && pass !== ''){
+			alert("Logged in Successfully");
+			document.forms.myform.submit();
+		}
+	}
+
+	
+	function resetForm(){
+		alert("The is reset!")	
+	}
+</script>
+<h2>Login Form</h2>
+<form id="myform">
+	User ID: <input type="number" name="uid" onfocus="alert("Enter a valid id");">
+	User Pass : <input type="password" name="pass">
+	<button onclick="validate()">Submit </button>
+	<button type="reset" onclick="resetForm()">Reset</button>
+</form>
+</body>
+</html>
