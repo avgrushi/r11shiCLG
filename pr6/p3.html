@@ -1,0 +1,45 @@
+<html>
+<body>
+<script>
+	function update(val){
+		with(document.forms.form1){
+			if(val == "fruits"){
+				opt[0].text = "Mango";
+				opt[0].value = "Mango";
+				opt[1].text = "Banana";
+				opt[1].value = "Banana";
+				opt[2].text = "Apple";
+				opt[2].value = "Apple";
+			}
+			if(val == "vegetable" ){
+				opt[0].text = "Spinach";
+				opt[0].value = "Spinach";
+				opt[1].text = "Tomato";
+				opt[2].text = "Potato";
+			}
+		}
+	}
+	var x = document.forms.form1;
+	console.log();
+</script>
+<form name="form1">
+	
+	<br>
+	
+	Select one from below <br> 
+
+	<input type="radio" onclick="update(this.value)" name="gr1" value="vegetable" default selected>Vegetable <br>
+	<input type="radio" onclick="update(this.value)" name="gr1" value="fruits"> Fruits 
+
+	
+	<br>
+	<br>
+	
+	<select name = "opt" size="3" onchange="alert(this.value)">
+		<option value=""></option>
+		<option value=""></option>
+		<option value=""></option>
+	</select>
+</form>
+</body>
+</html>
