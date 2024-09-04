@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+
+
+	function enable(){		
+		document.getElementById("btn").disabled = false;
+
+	}
+	
+	function disable(){
+		document.getElementById("btn").disabled  = true;
+	}
+</script>
+	
+	<p> Click on below buttons to change button property </p>
+
+	<br>
+	<button id="btn" disabled>Button</button>
+	<br>
+	<br>
+	<button onclick="enable()">Enable</button>
+	<button onclick="disable()">Disable</button>
+	
+</body>
+</html>
