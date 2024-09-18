@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+	let cookieVal
+	function setCookie(){
+ 		let name = document.getElementById("name").value;
+		document.cookie= "username=" + name;
+		cookieVal = document.cookie;
+		alert("Cookie is set");
+	}
+
+	function getCookie(){
+		alert(cookieVal);
+	}
+</script>
+	Enter Name : <input type = "text" id = "name">
+	<button onclick="setCookie()"> Set Cookie </button>
+	<button onclick="getCookie()"> Get Cookie </button> 
+</body>
+</html>
