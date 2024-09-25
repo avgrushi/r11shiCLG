@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Example</title>
+    <style>
+        body {
+            height: 2000px; /* Make the body tall for scrolling */
+            background: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
+        }
+        #controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<div id="controls">
+    <h3>Scroll Controls</h3>
+    <button onclick="scrollToPosition()">Scroll To (100, 500)</button>
+    <button onclick="scrollByIncrement()">Scroll By Increment (0, 100)</button>
+</div>
+
+<script>
+    function scrollToPosition() {
+        window.scrollTo(100, 500); // Scroll to absolute position (100, 500)
+    }
+
+    function scrollByIncrement() {
+        window.scrollBy(0, 100); // Scroll down by 100 pixels from the current position
+    }
+</script>
+
+</body>
+</html>

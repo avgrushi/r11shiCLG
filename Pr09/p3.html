@@ -1,0 +1,38 @@
+<html>
+<body onload="openWindow()">
+<script>
+	let win;
+
+	function openWindow() {
+		win = window.open("about:blank", "_blank", "width=400,height=400");
+		win.document.write("<h1>New Window</h1>");
+	}
+
+	function movWin() {
+			let x = parseInt(document.f1.x.value);
+			let y = parseInt(document.f1.y.value);
+			console.log(x,y);
+			win.moveTo(x,y);
+		
+	}
+
+	function movWin2() {
+			let inc = parseInt(document.f2.inc.value);
+			win.moveBy(Number(inc), Number(inc));
+	}
+</script>
+<h1>Program 3 : moveTo() and moveBy()</h1>
+<form name="f1">
+<input type="number" placeholder="X coordinate" name="x">
+<input type="number" placeholder="Y coordinate" name="y"> 
+<button onclick="movWin(); return false;">Move Window</button>
+</form>
+<br><br>
+
+<form name="f2">
+	<input type="number" placeholder="Enter increment" name="inc">
+	<button onclick="movWin2(); return false;">Move Window by Increment</button>
+</form>
+
+</body>
+</html>
