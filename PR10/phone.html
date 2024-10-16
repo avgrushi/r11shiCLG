@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Name Validation</title>
+    <script>
+        let phoneRegex = /^[7-9]\d{9}$/;
+
+        let phone = prompt("Enter your phone number : ");
+        if(phone.match(phoneRegex)){
+            alert("valid phone no")
+        }
+        else{
+            alert("invalid phone no")
+        }
+        
+        let email = prompt("Enter your email : ")
+        
+        let emailRegex = /^([a-z0-9\.]+)@([a-z]+)\.([a-z?\.a-z]+)$/;
+        
+        if(email.match(emailRegex)){
+            alert("Email is valid");
+        }
+        else{
+            alert("Email is invalid");
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

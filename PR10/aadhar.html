@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Name Validation</title>
+    <script>
+        function validate() {
+            let aadhar = document.getElementById("aadhar").value; 
+            let regx = /^\d{4} \d{4} \d{4}$/; 
+
+            let txt = document.getElementById("v");
+
+            if (!aadhar.match(regx)) {
+                document.getElementById("a").style.visibility = "visible"; 
+                txt.style.color = "red"
+                txt.innerHTML = "Invalid Aadhar card"; 
+
+            } else {
+                document.getElementById("a").style.visibility = "hidden"; 
+                txt.style.color = "green"
+                txt.innerHTML = "Valid Aadhar card"; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="aadhar.png" width="100" height="100" alt="">
+    <h1>Aadhar Number Validation</h1>
+
+    Aadhar No: <input type="text" id="aadhar"> <label id="a" style="visibility: hidden; color: red">*</label><br><br>
+    <button onclick="validate()">Check</button>
+    <label id="v"></label>
+</body>
+</html>

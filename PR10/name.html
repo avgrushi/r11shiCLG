@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Name Validation</title>
+    <script>
+        let username = prompt("Enter your name");
+        let regex = /[a,e,i,o,u]/gi;
+        
+        if(username.match(regex)){
+            alert("username is valid as it has a vowel ");
+        }
+        else{
+            alert("username is invalid as it has not a vowel ");
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
